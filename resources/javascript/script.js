@@ -109,7 +109,36 @@ function signIn(user, pass) {
 
 signIn(usernamePrompt, passwordPrompt);
 
+var todos = [
+	"clean room",
+	"brush teeth",
+	"exercise",
+	"study javascript",
+	"eat healthy",
+];
 
+for (var i=0; i < todos.length; i++) {
+	todos[i] = todos[i] + "!";
+}
+
+var counter = 0;
+while (counter < 3) {
+	console.log("counter = " + counter);
+	counter++;
+}
+
+var counterTwo = 0;
+
+do {
+	console.log("counterTwo = " + counterTwo);
+	counterTwo++;
+} while (counterTwo < 3);
+
+function logTodos(todo, i) {
+	console.log(todo, i);
+}
+
+todos.forEach(logTodos)
 
 
 
